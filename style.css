@@ -26,6 +26,9 @@ h1{
     max-width: 1200px;
 }
 
+@media screen and (min-width: 699px) {    
+
+
 main  h2{
     margin-top: 3rem;
     color: #ffffff;
@@ -80,4 +83,6 @@ main  h2{
 
 .buttons > #draw{
     color: red;
+}
+
 }

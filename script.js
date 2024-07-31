@@ -1,7 +1,6 @@
 // 1. Create two variables, firstCard and secondCard. 
-// Set their values to a random number between 2-11
-
-// 2. Create a variable, sum, and set it to the sum of the two cards
+// 2. Set their values to a random number between 2-11
+// 3. Create a variable, sum, and set it to the sum of the two cards
 
 let firstCard = 2
 let secondCard = 7
@@ -10,24 +9,23 @@ let sum = firstCard + secondCard
 
 let hasBlackJack =  false
 
-// 1. Create a variable called isAlive and assign it to true
+// 4. Create a variable called isAlive and assign it to true
 let isAlive = true
 
-// 2. Flip its value to false in the appropriate code block 
+// 5. Flip its value to false in the appropriate code block 
 
-console.log(sum)
 
-// 1. Declare a variable called message and assign its value to an empty string
+// 6. Declare a variable called message and assign its value to an empty string
 let message = ""
-// 2. Reassign the message variable to the string we're logging out
+// 7. Reassign the message variable to the string we're logging out
 
-// 1. Store the message-el paragraph in a variable called messageEl
+// 8. Store the message-el paragraph in a variable called messageEl
 let messageEl = document.getElementById("message-el")
 
-// 2. Store the sum paragraph in a variable called sumEl
+// 9. Store the sum paragraph in a variable called sumEl
 let sumEl = document.querySelector("#drawS") //querySelector is short and dynamic but you've to use the css selector method for calling class, ID or Tag
 
-// 2. Store the cards divs in a variable called cards__box1 and cards__box2
+// 10. Store the cards divs in a variable called cards__box1 and cards__box2
 
 let firstC = document.querySelector("#first")
 let secondC = document.querySelector("#second")
@@ -58,7 +56,22 @@ function start(){
     }
 
     messageEl.textContent = message
-    sumEl.textContent += sum
+    sumEl.textContent = "Current Sum: " + sum
+    
+}
+
+function draw(){
+
+    // 11. Create a card variable, and hard code its value to a number (2-11)
+    let newNumber = 10
+
+    console.log("Drawing a new card from the deck!")
+
+    // 12. Add the new card to the sum variable
+    sum += newNumber
+        
+    // 13. Call start function again
+    start()
 }
 
 
