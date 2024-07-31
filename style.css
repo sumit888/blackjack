@@ -1,3 +1,83 @@
+*::after, *::before{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    background-color: azure;
+    background-image: url(https://cdnroute.bpsgameserver.com/common/Common/Common/neutral/image/2017/03/game.netentBlackjack3Hand.backgroundimage_v3.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+
+h1{
+    background-color: brown;
+    color: #fff;
+    padding: 3px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main  h2{
+    margin-top: 3rem;
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 800;
+    text-shadow: -2px 0px 1px yellow;
+}
+
+.cards{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards__box1, .cards__box2{
+    font-size: 5rem;
+    font-weight: 900;
+    text-shadow: -2px 0px 1px green;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, rgb(145, 145, 84), rgb(194, 194, 204));
+    
+}
+
+.cards__box1, .cards__box2 :hover{
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(194, 194, 204));
+    transition: all ease-in-out 1s;
+}
+
+#drawQ, #drawS{
+    color: floralwhite;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 0.5em;
+    text-shadow: -2px 0px 1px brown;
+    margin-bottom: 1em;
+}
+
+.buttons > button{
+    font-size: 2em;
+    padding: 15px 35px;
+    margin-right: 1em;
+    background-color: yellow;
+    color: #018112;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-weight: 900;
+}
+
+.buttons > #draw{
+    color: red;
 }

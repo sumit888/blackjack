@@ -12,11 +12,31 @@
 
 <body>
     <header>
-
+        <h1>Playing BlackJack in Vanilla JS</h1>
     </header>
 
     <main>
+        <div class="container">
 
+            <h2 id="message-el">Do You Want To Play Today? 😉</h2>
+
+            <section class="cards">
+                <div class="cards__box1">
+                    <p id="first">1</p>
+                </div>
+                <div class="cards__box2">
+                    <p id="second">2</p>
+                </div>
+            </section>
+
+            <h2 id="drawS">Current Sum: </h2>
+            <h2 id="drawQ">Do You Want To Draw A Card?</h2>
+
+            <section class="buttons">
+                <button id="start" onclick="start()">START</button>
+                <button id="draw" onclick="draw()">DRAW</button>
+            </section>
+        </div>
     </main>
 
     <footer>
