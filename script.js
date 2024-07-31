@@ -3,10 +3,17 @@
 
 // 2. Create a variable, sum, and set it to the sum of the two cards
 
-let firstCard = 2
+let firstCard = 20
 let secondCard = 5
 
 let sum = firstCard + secondCard
+
+let hasBlackJack =  false
+
+// 1. Create a variable called isAlive and assign it to true
+let isAlive = true
+
+// 2. Flip its value to false in the appropriate code block 
 
 console.log(sum)
 
@@ -17,10 +24,18 @@ console.log(sum)
 3) Given Hand is >21 //LOST
 */
 
-if(sum===21){
-    console.log("YOu are the Master Winner")
-} else if(sum<21){
-    console.log("Do You Want To Deal Another Card?")
+if (sum <= 20){
+    console.log("Do you want to draw a new card? 🙂")
+} else if (sum===21){
+    console.log("Wohoo! You've got the BlackJack! 🥳")
+    hasBlackJack = true
 } else {
-    console.log("Better Luck next time")
+    console.log("Sorry, You're out of the game! 😭")
+    isAlive = false
 }
+
+//Add the hasBlackJack variable for cashing out money [saving the state using boolean]
+
+// console.log(hasBlackJack)
+console.log(isAlive)
+
