@@ -2,8 +2,8 @@
 // 2. Set their values to a random number between 2-11
 // 3. Create a variable, sum, and set it to the sum of the two cards
 
-let firstCard = 2
-let secondCard = 7
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 
 let sum = firstCard + secondCard
 
@@ -42,6 +42,12 @@ let cards = [firstCard, secondCard]
 3) Given Hand is >21 //LOST
 */
 
+// Create a function, getRandomCard(), that always returns the number 5 for avoding hardcoding the card numbers
+ 
+function getRandomCard(){ //hoisting is when function will always be on the top regardless where it was written so that a variable can make use of that.
+    return Math.floor(Math.random() * 21 + 1) //Since Math.random generates number between 0.000 to 0.999 multiplying that will generate a whole number and using math.floor will remove the decimas giving us a pure random whole number at the end. and we add +1 so that it gives us number between 1 to 20
+}
+
 function start(){
     // 2. Refer to the cards array when rendering out the cards instead of the respective variable
 
@@ -69,7 +75,7 @@ function start(){
 function draw(){
 
     // 11. Create a card variable, and hard code its value to a number (2-11)
-    let newNumber = 10
+    let newNumber = getRandomCard()
 
     
     // Push the card to the cards array
