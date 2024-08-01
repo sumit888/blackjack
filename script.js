@@ -30,6 +30,11 @@ let sumEl = document.querySelector("#drawS") //querySelector is short and dynami
 let firstC = document.querySelector("#first")
 let secondC = document.querySelector("#second")
 
+// 14. Create a new array - cards - that contains firstCard and secondCard
+
+let cards = [firstCard, secondCard]
+
+
 //LOGIC
 /*
 1) Given Hand is <21 //GOOD
@@ -38,9 +43,10 @@ let secondC = document.querySelector("#second")
 */
 
 function start(){
+    // 2. Refer to the cards array when rendering out the cards instead of the respective variable
 
-    firstC.textContent = firstCard
-    secondC.textContent = secondCard
+    firstC.textContent = cards[0]
+    secondC.textContent = cards[1]
 
     if (sum <= 20){
         message = "Do you want to draw a new card? 🙂"
@@ -65,11 +71,13 @@ function draw(){
     // 11. Create a card variable, and hard code its value to a number (2-11)
     let newNumber = 10
 
-    console.log("Drawing a new card from the deck!")
-
+    
+    // Push the card to the cards array
+    cards.push(newNumber)
     // 12. Add the new card to the sum variable
-    sum += newNumber
-        
+    sum += cards[2]
+
+    console.log("Drawing a new card from the deck!") 
     // 13. Call start function again
     start()
 }
