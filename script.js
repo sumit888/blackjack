@@ -45,7 +45,7 @@ let cards = [firstCard, secondCard]
 // Create a function, getRandomCard(), that always returns the number 5 for avoding hardcoding the card numbers
  
 function getRandomCard(){ //hoisting is when function will always be on the top regardless where it was written so that a variable can make use of that.
-    return Math.floor(Math.random() * 21 + 1) //Since Math.random generates number between 0.000 to 0.999 multiplying that will generate a whole number and using math.floor will remove the decimas giving us a pure random whole number at the end. and we add +1 so that it gives us number between 1 to 20
+    return Math.floor(Math.random() * 13 + 1) //Since Math.random generates number between 0.000 to 0.999 multiplying that will generate a whole number and using math.floor will remove the decimas giving us a pure random whole number at the end. and we add +1 so that it gives us number between 1 to 20
 }
 
 function start(){
