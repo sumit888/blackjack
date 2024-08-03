@@ -34,6 +34,20 @@ let secondC = document.querySelector("#second")
 
 let cards = [firstCard, secondCard]
 
+//Creating an object Player for the related attributes // Objects - store data in-depth - composite / complex data type && // key-value pairs
+
+
+// let playerName = "Sumit"
+// let playerChips = 145
+
+let player = {
+    Name: "Sumit",
+    Chips: 145
+}
+
+let playerEl = document.getElementById("credit")
+playerEl.textContent = player.Name + ": $" + player.Chips
+
 
 //LOGIC
 /*
@@ -74,6 +88,10 @@ function start(){
 
 function draw(){
 
+    // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+
+    if (isAlive===true && hasBlackJack===false){
+
     // 11. Create a card variable, and hard code its value to a number (2-11)
     let newNumber = getRandomCard()
 
@@ -86,6 +104,7 @@ function draw(){
     console.log("Drawing a new card from the deck!") 
     // 13. Call start function again
     start()
+    }
 }
 
 
